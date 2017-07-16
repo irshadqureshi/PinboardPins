@@ -1,3 +1,3 @@
 # PinboardPins
 
-Simple App made to test the IQCacheResources Library which I made Recently.
+Simple App made to test the features IQCacheResources Library. Thank You!
