@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.0)
+  - IQCacheResources (0.1.0)
+  - SwiftMessages (3.4.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQCacheResources
+  - SwiftMessages
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  IQCacheResources: bf74539dd981934f9940b22649a797503770c35d
+  SwiftMessages: e20aa1557fde1525ea369361bec4943cc0d08e7c
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: a22dc98db66aff90f9f4b929ba736b47503a7fdb
+
+COCOAPODS: 1.2.1

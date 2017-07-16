@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328FAD00530F010A8AAA3C3C /* Pods_PinboardPins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BC47EE77B013BB8A3BBBD6 /* Pods_PinboardPins.framework */; };
+		A20990D910A32FF37AD47E34 /* Pods_PinboardPinsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95603785C4C7E70ACDD6163A /* Pods_PinboardPinsUITests.framework */; };
+		B0C0BB9301674DB19A7AD9F9 /* Pods_PinboardPinsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE51C75CB369435DFBF0DAA /* Pods_PinboardPinsTests.framework */; };
+		E70B5B051F1B748C00E688A4 /* Pinboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70B5B041F1B748C00E688A4 /* Pinboard.storyboard */; };
+		E70B5B071F1B758000E688A4 /* XIBIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B061F1B758000E688A4 /* XIBIdentifiers.swift */; };
+		E70B5B091F1B758F00E688A4 /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B081F1B758F00E688A4 /* SegueConstants.swift */; };
+		E70B5B0B1F1B75AA00E688A4 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B0A1F1B75AA00E688A4 /* Global.swift */; };
+		E70B5B0D1F1B76DC00E688A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B0C1F1B76DC00E688A4 /* Constants.swift */; };
+		E70B5B0F1F1B787700E688A4 /* PinboardPinsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B0E1F1B787700E688A4 /* PinboardPinsViewController.swift */; };
+		E70B5B111F1B7CEF00E688A4 /* PinsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70B5B101F1B7CEF00E688A4 /* PinsCollectionViewCell.xib */; };
+		E70B5B131F1B7D1A00E688A4 /* PinsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B121F1B7D1A00E688A4 /* PinsCollectionViewCell.swift */; };
+		E70B5B161F1B869500E688A4 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B151F1B869500E688A4 /* PinterestLayout.swift */; };
+		E70B5B181F1B899C00E688A4 /* PinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B171F1B899C00E688A4 /* PinData.swift */; };
+		E70B5B1A1F1BC0B200E688A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70B5B191F1BC0B200E688A4 /* Extensions.swift */; };
+		E70B5B1C1F1BEDB200E688A4 /* LoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E70B5B1B1F1BEDB200E688A4 /* LoadMoreCell.xib */; };
+		E74BAF591F1997C10018840C /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74BAF581F1997C10018840C /* RestApiManager.swift */; };
+		E7CCC8A11F1BF1180041F834 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCC8A01F1BF1180041F834 /* LoadMoreCell.swift */; };
+		E7CCC8A31F1BFF190041F834 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CCC8A21F1BFF190041F834 /* ProfileViewController.swift */; };
+		E7FAAEDA1F198E9700B169AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAED91F198E9700B169AF /* AppDelegate.swift */; };
+		E7FAAEDC1F198E9700B169AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAEDB1F198E9700B169AF /* LoginViewController.swift */; };
+		E7FAAEDF1F198E9700B169AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FAAEDD1F198E9700B169AF /* Main.storyboard */; };
+		E7FAAEE21F198E9700B169AF /* PinboardPins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAEE01F198E9700B169AF /* PinboardPins.xcdatamodeld */; };
+		E7FAAEE41F198E9700B169AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FAAEE31F198E9700B169AF /* Assets.xcassets */; };
+		E7FAAEE71F198E9700B169AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FAAEE51F198E9700B169AF /* LaunchScreen.storyboard */; };
+		E7FAAEF21F198E9700B169AF /* PinboardPinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAEF11F198E9700B169AF /* PinboardPinsTests.swift */; };
+		E7FAAEFD1F198E9700B169AF /* PinboardPinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAAEFC1F198E9700B169AF /* PinboardPinsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7FAAEEE1F198E9700B169AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7FAAECE1F198E9700B169AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7FAAED51F198E9700B169AF;
+			remoteInfo = PinboardPins;
+		};
+		E7FAAEF91F198E9700B169AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7FAAECE1F198E9700B169AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7FAAED51F198E9700B169AF;
+			remoteInfo = PinboardPins;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		399AA2504AC46DD95B3BA71A /* Pods-PinboardPinsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPinsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPinsUITests/Pods-PinboardPinsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		796067921905E462ED9241C8 /* Pods-PinboardPinsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPinsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPinsTests/Pods-PinboardPinsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B2ECB728301B838FBCFFE91 /* Pods-PinboardPins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPins.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPins/Pods-PinboardPins.release.xcconfig"; sourceTree = "<group>"; };
+		929AF34E4DEBC95B71D08493 /* Pods-PinboardPinsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPinsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPinsTests/Pods-PinboardPinsTests.release.xcconfig"; sourceTree = "<group>"; };
+		95603785C4C7E70ACDD6163A /* Pods_PinboardPinsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinboardPinsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE51C75CB369435DFBF0DAA /* Pods_PinboardPinsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinboardPinsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CEB85A770BB997B449F88A /* Pods-PinboardPinsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPinsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPinsUITests/Pods-PinboardPinsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6BA557884552FA101F626CA /* Pods-PinboardPins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinboardPins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinboardPins/Pods-PinboardPins.debug.xcconfig"; sourceTree = "<group>"; };
+		C8BC47EE77B013BB8A3BBBD6 /* Pods_PinboardPins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinboardPins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70B5B041F1B748C00E688A4 /* Pinboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pinboard.storyboard; sourceTree = "<group>"; };
+		E70B5B061F1B758000E688A4 /* XIBIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBIdentifiers.swift; sourceTree = "<group>"; };
+		E70B5B081F1B758F00E688A4 /* SegueConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
+		E70B5B0A1F1B75AA00E688A4 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		E70B5B0C1F1B76DC00E688A4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E70B5B0E1F1B787700E688A4 /* PinboardPinsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinboardPinsViewController.swift; sourceTree = "<group>"; };
+		E70B5B101F1B7CEF00E688A4 /* PinsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinsCollectionViewCell.xib; sourceTree = "<group>"; };
+		E70B5B121F1B7D1A00E688A4 /* PinsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E70B5B151F1B869500E688A4 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = Layouts/PinterestLayout.swift; sourceTree = "<group>"; };
+		E70B5B171F1B899C00E688A4 /* PinData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinData.swift; sourceTree = "<group>"; };
+		E70B5B191F1BC0B200E688A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E70B5B1B1F1BEDB200E688A4 /* LoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadMoreCell.xib; sourceTree = "<group>"; };
+		E74BAF581F1997C10018840C /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
+		E7CCC8A01F1BF1180041F834 /* LoadMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
+		E7CCC8A21F1BFF190041F834 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E7FAAED61F198E9700B169AF /* PinboardPins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinboardPins.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FAAED91F198E9700B169AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E7FAAEDB1F198E9700B169AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7FAAEDE1F198E9700B169AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7FAAEE11F198E9700B169AF /* PinboardPins.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinboardPins.xcdatamodel; sourceTree = "<group>"; };
+		E7FAAEE31F198E9700B169AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7FAAEE61F198E9700B169AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E7FAAEE81F198E9700B169AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FAAEED1F198E9700B169AF /* PinboardPinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinboardPinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FAAEF11F198E9700B169AF /* PinboardPinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardPinsTests.swift; sourceTree = "<group>"; };
+		E7FAAEF31F198E9700B169AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FAAEF81F198E9700B169AF /* PinboardPinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinboardPinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FAAEFC1F198E9700B169AF /* PinboardPinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinboardPinsUITests.swift; sourceTree = "<group>"; };
+		E7FAAEFE1F198E9700B169AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7FAAED31F198E9700B169AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328FAD00530F010A8AAA3C3C /* Pods_PinboardPins.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEEA1F198E9700B169AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C0BB9301674DB19A7AD9F9 /* Pods_PinboardPinsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEF51F198E9700B169AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20990D910A32FF37AD47E34 /* Pods_PinboardPinsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EEA166D3697E406DCDDA24C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA557884552FA101F626CA /* Pods-PinboardPins.debug.xcconfig */,
+				7B2ECB728301B838FBCFFE91 /* Pods-PinboardPins.release.xcconfig */,
+				796067921905E462ED9241C8 /* Pods-PinboardPinsTests.debug.xcconfig */,
+				929AF34E4DEBC95B71D08493 /* Pods-PinboardPinsTests.release.xcconfig */,
+				B0CEB85A770BB997B449F88A /* Pods-PinboardPinsUITests.debug.xcconfig */,
+				399AA2504AC46DD95B3BA71A /* Pods-PinboardPinsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C182C2AB80CE21CEE39CE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8BC47EE77B013BB8A3BBBD6 /* Pods_PinboardPins.framework */,
+				ACE51C75CB369435DFBF0DAA /* Pods_PinboardPinsTests.framework */,
+				95603785C4C7E70ACDD6163A /* Pods_PinboardPinsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E70B5B141F1B862800E688A4 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B151F1B869500E688A4 /* PinterestLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		E7FAAECD1F198E9700B169AF = {
+			isa = PBXGroup;
+			children = (
+				E7FAAED81F198E9700B169AF /* PinboardPins */,
+				E7FAAEF01F198E9700B169AF /* PinboardPinsTests */,
+				E7FAAEFB1F198E9700B169AF /* PinboardPinsUITests */,
+				E7FAAED71F198E9700B169AF /* Products */,
+				1EEA166D3697E406DCDDA24C /* Pods */,
+				9C182C2AB80CE21CEE39CE4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E7FAAED71F198E9700B169AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAED61F198E9700B169AF /* PinboardPins.app */,
+				E7FAAEED1F198E9700B169AF /* PinboardPinsTests.xctest */,
+				E7FAAEF81F198E9700B169AF /* PinboardPinsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7FAAED81F198E9700B169AF /* PinboardPins */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAF1A1F198F9400B169AF /* AppDelegate */,
+				E7FAAF171F198F7D00B169AF /* Controllers */,
+				E7FAAF161F198F7000B169AF /* DataModel */,
+				E7FAAF151F198F5E00B169AF /* Helpers */,
+				E7FAAF141F198F5800B169AF /* Model */,
+				E7FAAF131F198F5000B169AF /* Network */,
+				E7FAAF0B1F198ECF00B169AF /* Resources */,
+				E7FAAF0A1F198EBD00B169AF /* Views */,
+			);
+			path = PinboardPins;
+			sourceTree = "<group>";
+		};
+		E7FAAEF01F198E9700B169AF /* PinboardPinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEF11F198E9700B169AF /* PinboardPinsTests.swift */,
+				E7FAAEF31F198E9700B169AF /* Info.plist */,
+			);
+			path = PinboardPinsTests;
+			sourceTree = "<group>";
+		};
+		E7FAAEFB1F198E9700B169AF /* PinboardPinsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEFC1F198E9700B169AF /* PinboardPinsUITests.swift */,
+				E7FAAEFE1F198E9700B169AF /* Info.plist */,
+			);
+			path = PinboardPinsUITests;
+			sourceTree = "<group>";
+		};
+		E7FAAF0A1F198EBD00B169AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B141F1B862800E688A4 /* Layouts */,
+				E70B5B101F1B7CEF00E688A4 /* PinsCollectionViewCell.xib */,
+				E70B5B121F1B7D1A00E688A4 /* PinsCollectionViewCell.swift */,
+				E70B5B1B1F1BEDB200E688A4 /* LoadMoreCell.xib */,
+				E7CCC8A01F1BF1180041F834 /* LoadMoreCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7FAAF0B1F198ECF00B169AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAF0E1F198EFB00B169AF /* ImageAssets */,
+				E7FAAF0D1F198EF300B169AF /* Interface */,
+				E7FAAF0C1F198EDB00B169AF /* Plists */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7FAAF0C1F198EDB00B169AF /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEE81F198E9700B169AF /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		E7FAAF0D1F198EF300B169AF /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAF101F198F2400B169AF /* LaunchScreen */,
+				E7FAAF0F1F198F1200B169AF /* Storyboard */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		E7FAAF0E1F198EFB00B169AF /* ImageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEE31F198E9700B169AF /* Assets.xcassets */,
+			);
+			path = ImageAssets;
+			sourceTree = "<group>";
+		};
+		E7FAAF0F1F198F1200B169AF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAF111F198F3500B169AF /* Login */,
+				E7FAAF121F198F3C00B169AF /* Pinboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E7FAAF101F198F2400B169AF /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEE51F198E9700B169AF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		E7FAAF111F198F3500B169AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEDD1F198E9700B169AF /* Main.storyboard */,
+			);
+			name = Login;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E7FAAF121F198F3C00B169AF /* Pinboard */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B041F1B748C00E688A4 /* Pinboard.storyboard */,
+			);
+			path = Pinboard;
+			sourceTree = "<group>";
+		};
+		E7FAAF131F198F5000B169AF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E74BAF581F1997C10018840C /* RestApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E7FAAF141F198F5800B169AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B171F1B899C00E688A4 /* PinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7FAAF151F198F5E00B169AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B0C1F1B76DC00E688A4 /* Constants.swift */,
+				E70B5B0A1F1B75AA00E688A4 /* Global.swift */,
+				E70B5B081F1B758F00E688A4 /* SegueConstants.swift */,
+				E70B5B061F1B758000E688A4 /* XIBIdentifiers.swift */,
+				E70B5B191F1BC0B200E688A4 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7FAAF161F198F7000B169AF /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEE01F198E9700B169AF /* PinboardPins.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		E7FAAF171F198F7D00B169AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAF191F198F8D00B169AF /* Login */,
+				E7FAAF181F198F8500B169AF /* Pinboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7FAAF181F198F8500B169AF /* Pinboard */ = {
+			isa = PBXGroup;
+			children = (
+				E70B5B0E1F1B787700E688A4 /* PinboardPinsViewController.swift */,
+				E7CCC8A21F1BFF190041F834 /* ProfileViewController.swift */,
+			);
+			path = Pinboard;
+			sourceTree = "<group>";
+		};
+		E7FAAF191F198F8D00B169AF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAEDB1F198E9700B169AF /* LoginViewController.swift */,
+			);
+			name = Login;
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E7FAAF1A1F198F9400B169AF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAAED91F198E9700B169AF /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7FAAED51F198E9700B169AF /* PinboardPins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FAAF011F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPins" */;
+			buildPhases = (
+				1652C925D03E8C747800699E /* [CP] Check Pods Manifest.lock */,
+				E7FAAED21F198E9700B169AF /* Sources */,
+				E7FAAED31F198E9700B169AF /* Frameworks */,
+				E7FAAED41F198E9700B169AF /* Resources */,
+				6FD49DCCBD1DFD91F48C8347 /* [CP] Embed Pods Frameworks */,
+				B3A41A92BF7B0EA6DC115A75 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinboardPins;
+			productName = PinboardPins;
+			productReference = E7FAAED61F198E9700B169AF /* PinboardPins.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7FAAEEC1F198E9700B169AF /* PinboardPinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FAAF041F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPinsTests" */;
+			buildPhases = (
+				87B23C0C4676F9C9EE057DC3 /* [CP] Check Pods Manifest.lock */,
+				E7FAAEE91F198E9700B169AF /* Sources */,
+				E7FAAEEA1F198E9700B169AF /* Frameworks */,
+				E7FAAEEB1F198E9700B169AF /* Resources */,
+				1B072BC4D5344C63E8115E27 /* [CP] Embed Pods Frameworks */,
+				C821CA83E1F615CB64A1E7F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7FAAEEF1F198E9700B169AF /* PBXTargetDependency */,
+			);
+			name = PinboardPinsTests;
+			productName = PinboardPinsTests;
+			productReference = E7FAAEED1F198E9700B169AF /* PinboardPinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7FAAEF71F198E9700B169AF /* PinboardPinsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FAAF071F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPinsUITests" */;
+			buildPhases = (
+				3AD8D5CC9744C2594947C2D8 /* [CP] Check Pods Manifest.lock */,
+				E7FAAEF41F198E9700B169AF /* Sources */,
+				E7FAAEF51F198E9700B169AF /* Frameworks */,
+				E7FAAEF61F198E9700B169AF /* Resources */,
+				7BF3F943DF59110620A1703B /* [CP] Embed Pods Frameworks */,
+				F3834998DBF9CE2F4703F4BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7FAAEFA1F198E9700B169AF /* PBXTargetDependency */,
+			);
+			name = PinboardPinsUITests;
+			productName = PinboardPinsUITests;
+			productReference = E7FAAEF81F198E9700B169AF /* PinboardPinsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7FAAECE1F198E9700B169AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MindValley;
+				TargetAttributes = {
+					E7FAAED51F198E9700B169AF = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					E7FAAEEC1F198E9700B169AF = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = E7FAAED51F198E9700B169AF;
+					};
+					E7FAAEF71F198E9700B169AF = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = E7FAAED51F198E9700B169AF;
+					};
+				};
+			};
+			buildConfigurationList = E7FAAED11F198E9700B169AF /* Build configuration list for PBXProject "PinboardPins" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7FAAECD1F198E9700B169AF;
+			productRefGroup = E7FAAED71F198E9700B169AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7FAAED51F198E9700B169AF /* PinboardPins */,
+				E7FAAEEC1F198E9700B169AF /* PinboardPinsTests */,
+				E7FAAEF71F198E9700B169AF /* PinboardPinsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7FAAED41F198E9700B169AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70B5B1C1F1BEDB200E688A4 /* LoadMoreCell.xib in Resources */,
+				E70B5B111F1B7CEF00E688A4 /* PinsCollectionViewCell.xib in Resources */,
+				E7FAAEE71F198E9700B169AF /* LaunchScreen.storyboard in Resources */,
+				E70B5B051F1B748C00E688A4 /* Pinboard.storyboard in Resources */,
+				E7FAAEE41F198E9700B169AF /* Assets.xcassets in Resources */,
+				E7FAAEDF1F198E9700B169AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEEB1F198E9700B169AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEF61F198E9700B169AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1652C925D03E8C747800699E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B072BC4D5344C63E8115E27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPinsTests/Pods-PinboardPinsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AD8D5CC9744C2594947C2D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD49DCCBD1DFD91F48C8347 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPins/Pods-PinboardPins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF3F943DF59110620A1703B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPinsUITests/Pods-PinboardPinsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B23C0C4676F9C9EE057DC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A41A92BF7B0EA6DC115A75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPins/Pods-PinboardPins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C821CA83E1F615CB64A1E7F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPinsTests/Pods-PinboardPinsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3834998DBF9CE2F4703F4BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinboardPinsUITests/Pods-PinboardPinsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7FAAED21F198E9700B169AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FAAEDC1F198E9700B169AF /* LoginViewController.swift in Sources */,
+				E70B5B071F1B758000E688A4 /* XIBIdentifiers.swift in Sources */,
+				E7FAAEDA1F198E9700B169AF /* AppDelegate.swift in Sources */,
+				E74BAF591F1997C10018840C /* RestApiManager.swift in Sources */,
+				E7FAAEE21F198E9700B169AF /* PinboardPins.xcdatamodeld in Sources */,
+				E70B5B181F1B899C00E688A4 /* PinData.swift in Sources */,
+				E70B5B091F1B758F00E688A4 /* SegueConstants.swift in Sources */,
+				E70B5B0B1F1B75AA00E688A4 /* Global.swift in Sources */,
+				E7CCC8A11F1BF1180041F834 /* LoadMoreCell.swift in Sources */,
+				E70B5B1A1F1BC0B200E688A4 /* Extensions.swift in Sources */,
+				E70B5B161F1B869500E688A4 /* PinterestLayout.swift in Sources */,
+				E70B5B0F1F1B787700E688A4 /* PinboardPinsViewController.swift in Sources */,
+				E7CCC8A31F1BFF190041F834 /* ProfileViewController.swift in Sources */,
+				E70B5B131F1B7D1A00E688A4 /* PinsCollectionViewCell.swift in Sources */,
+				E70B5B0D1F1B76DC00E688A4 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEE91F198E9700B169AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FAAEF21F198E9700B169AF /* PinboardPinsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FAAEF41F198E9700B169AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FAAEFD1F198E9700B169AF /* PinboardPinsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7FAAEEF1F198E9700B169AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7FAAED51F198E9700B169AF /* PinboardPins */;
+			targetProxy = E7FAAEEE1F198E9700B169AF /* PBXContainerItemProxy */;
+		};
+		E7FAAEFA1F198E9700B169AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7FAAED51F198E9700B169AF /* PinboardPins */;
+			targetProxy = E7FAAEF91F198E9700B169AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7FAAEDD1F198E9700B169AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7FAAEDE1F198E9700B169AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E7FAAEE51F198E9700B169AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7FAAEE61F198E9700B169AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7FAAEFF1F198E9700B169AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7FAAF001F198E9700B169AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7FAAF021F198E9700B169AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6BA557884552FA101F626CA /* Pods-PinboardPins.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/PinboardPins/Resources/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7FAAF031F198E9700B169AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2ECB728301B838FBCFFE91 /* Pods-PinboardPins.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/PinboardPins/Resources/Plists/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPins;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7FAAF051F198E9700B169AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796067921905E462ED9241C8 /* Pods-PinboardPinsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				INFOPLIST_FILE = PinboardPinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinboardPins.app/PinboardPins";
+			};
+			name = Debug;
+		};
+		E7FAAF061F198E9700B169AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929AF34E4DEBC95B71D08493 /* Pods-PinboardPinsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				INFOPLIST_FILE = PinboardPinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinboardPins.app/PinboardPins";
+			};
+			name = Release;
+		};
+		E7FAAF081F198E9700B169AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CEB85A770BB997B449F88A /* Pods-PinboardPinsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				INFOPLIST_FILE = PinboardPinsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinboardPins;
+			};
+			name = Debug;
+		};
+		E7FAAF091F198E9700B169AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399AA2504AC46DD95B3BA71A /* Pods-PinboardPinsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K2E2ZHJ3C4;
+				INFOPLIST_FILE = PinboardPinsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindValley.PinboardPinsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PinboardPins;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7FAAED11F198E9700B169AF /* Build configuration list for PBXProject "PinboardPins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FAAEFF1F198E9700B169AF /* Debug */,
+				E7FAAF001F198E9700B169AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FAAF011F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FAAF021F198E9700B169AF /* Debug */,
+				E7FAAF031F198E9700B169AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FAAF041F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FAAF051F198E9700B169AF /* Debug */,
+				E7FAAF061F198E9700B169AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FAAF071F198E9700B169AF /* Build configuration list for PBXNativeTarget "PinboardPinsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FAAF081F198E9700B169AF /* Debug */,
+				E7FAAF091F198E9700B169AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7FAAEE01F198E9700B169AF /* PinboardPins.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7FAAEE11F198E9700B169AF /* PinboardPins.xcdatamodel */,
+			);
+			currentVersion = E7FAAEE11F198E9700B169AF /* PinboardPins.xcdatamodel */;
+			path = PinboardPins.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E7FAAECE1F198E9700B169AF /* Project object */;
+}
